@@ -4,3 +4,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./poppins.regular.ttf') format('poppins');
+    font-weight: normal;
+    font-style: normal;
+}
