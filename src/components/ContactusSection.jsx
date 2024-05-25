@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import contactUs from "../assets/images/cintactUs.jpeg"
 import arrowcontactUs from "../assets/images/SVG/icons/contactusIcon.svg"
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from "framer-motion";
+
 const ContactusSection = () => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            controls.start({ opacity: 1, y: 0 });
+        }
+    }, [controls, inView]);
     return (
-        <div className='md:mt-32'>
+        <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={controls}
+            transition={{ duration: 2 }}
+            className='md:mt-32'>
             <div className='w-full  h-[700px] relative mx-auto'>
                 <img src={contactUs} alt="contactUs" className='w-full h-full object-cover' />
                 <div className='absolute top-0 bg-gradient-to-b from-[#06535b] to-[#06535b71] opacity-[.7] w-full h-full'></div>
@@ -23,7 +39,7 @@ const ContactusSection = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </motion.div>
 
     )
 }

@@ -2,9 +2,9 @@ import backG from "../../assets/images/aboutUs.jpeg"
 import Vendor from "../../assets/images/SVG/Vendor.svg"
 
 const AboutUsImg = () => (
-    <div className='relative max-w-[90%] mx-auto scale-75 md:scale-100 '>
+    <div className='relative max-w-[100%] h-full mx-auto scale-75 md:scale-100 '>
         {/* outLine Border Div */}
-        <div className='text-[50rem] text-red-500 absolute w-full h-full top-8 z-20 border-4 border-[#A8513A]'></div>
+        <div className='text-[50rem] text-red-500 absolute w-full h-full top-8 z-20 border-4  border-[#A8513A]'></div>
         {/* /outLine Border Div */}
 
         <div className='relative w-full md:w-[547.92px] h-[600.11px] left-8 md:left-16 overflow-hidden z-0'>
