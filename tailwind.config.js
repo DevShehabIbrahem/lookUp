@@ -8,7 +8,9 @@ module.exports = {
         Astegra: ['Astegra'], 
         poppins: ['poppins'], 
     },
-   
+    clipPath: {
+      'top-left-cut': 'polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%)',
+    },
     colors:{
       sectionTitle:"#A8513A",
       grrenColor:"#05414B"
@@ -27,5 +29,13 @@ module.exports = {
       mixBlendMode: ['hover','plus-lighter'],
     },
   },
-  plugins: [],
+   plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.clip-top-left': {
+          'clip-path': 'polygon(48% 0, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0 32%, 47% 31%)',
+        },
+      });
+    },
+  ],
 }
