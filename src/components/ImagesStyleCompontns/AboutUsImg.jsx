@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component"
 import backG from "../../assets/images/aboutUs.jpeg"
 import Vendor from "../../assets/images/SVG/Vendor.svg"
 
@@ -9,7 +10,7 @@ const AboutUsImg = () => (
 
         <div className='relative w-full md:w-[547.92px] h-[600.11px] left-8 md:left-16 overflow-hidden z-0'>
             {/* main BG Img */}
-            <img src={backG} alt="backG" className='w-full h-full object-cover' />
+            <LazyLoadImage src={backG} alt="backG" className='w-full h-full object-cover' />
             {/*  /main BG Img */}
 
             <div className='absolute inset-0 flex items-center justify-end'>

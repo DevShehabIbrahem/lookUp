@@ -1,12 +1,13 @@
 import React from 'react'
 import backG from "../../assets/images/OurVision.jpeg"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const OurVisionImg = () => {
     return (
         <div className='relative  lg:w-[547.92px] h-[600.11px] scale-75 lg:scale-100'>
             <div class="relative lg:w-[547.92px] h-[600.11px]  overflow-hidden z-0">
                 {/* main BG Img */}
-                <img src={backG} alt="backG" class="w-full h-full object-cover" />
+                <LazyLoadImage src={backG} alt="backG" class="w-full h-full object-cover" />
                 {/*  /main BG Img */}
 
                 <div class="absolute inset-0 left-20 flex items-center justify-center w-[38rem]">
