@@ -5,12 +5,12 @@ import email from "../assets/images/SVG/icons/email.svg"
 import clender from "../assets/images/SVG/icons/calender.svg"
 const Footer = () => {
     return (
-        <footer className='mt-32 text-white bg-gradient-to-b py-12 from-[#06535B] to-[#004A52]'>
+        <footer className='md:mt-32 text-white bg-gradient-to-b py-12 from-[#06535B] to-[#004A52]'>
             <div className='container mx-auto flex flex-col items-center'>
                 <div className='flex justify-center w-[230px] h-[139px] mx-auto '>
                     <img src={logo} alt="logo" className='w-full h-full' />
                 </div>
-                <div className='flex justify-evenly  items-baseline w-full  mx-auto py-12'>
+                <div className='flex justify-evenly flex-wrap gap-8 items-baseline w-full  mx-auto py-12'>
                     <div>
                         <div className='flex flex-col items-center gap-3'>
 
@@ -29,16 +29,12 @@ const Footer = () => {
                     <div>
                         <div className='flex flex-col items-center gap-3'>
                             <div className='flex items-start gap-3'>
-
                                 <img src={email} alt="tele" />
                                 <div>
                                     <span>Email Address</span>
                                     <h3>info@ucdevelop.com</h3>
                                 </div>
-
                             </div>
-
-
                         </div>
                     </div>
                     <div>
@@ -49,12 +45,7 @@ const Footer = () => {
                                     <span>Address</span>
                                     <span className='text-wrap'>Building 320, 90th St. 5th Settlement, <br /> Cairo, Egypt. <a href="#" className='rounded-full bg-[#488d9944] p-1 px-3 text-[14px] outline-none'>Show Map</a></span>
                                 </div>
-
-
                             </div>
-
-
-
                         </div>
                     </div>
                     <div>

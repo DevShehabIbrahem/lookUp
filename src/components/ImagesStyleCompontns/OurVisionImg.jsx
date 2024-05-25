@@ -3,8 +3,8 @@ import backG from "../../assets/images/OurVision.jpeg"
 
 const OurVisionImg = () => {
     return (
-        <div className='relative  w-[547.92px] h-[600.11px]'>
-            <div class="relative w-[547.92px] h-[600.11px] left-16 overflow-hidden z-0">
+        <div className='relative  md:w-[547.92px] h-[600.11px] scale-75 md:scale-100'>
+            <div class="relative md:w-[547.92px] h-[600.11px]  overflow-hidden z-0">
                 {/* main BG Img */}
                 <img src={backG} alt="backG" class="w-full h-full object-cover" />
                 {/*  /main BG Img */}
