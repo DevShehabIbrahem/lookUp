@@ -15,10 +15,10 @@ const DecComponent = ({ title, greenTitle, BrownTitle, desc, noWrapTitle, slider
     return (
         <div className='scale-75 md:scale-100'>
             <span className='uppercase text-sectionTitle font-bold font-sans'>{title}</span>
-            <div className={`text-[48px] font-Astegra flex ${noWrapTitle ? "flex-row" : "flex-col"} leading-10 my-5`}>
+            <div className={`md:text-[48px] text-[36px] font-Astegra flex ${noWrapTitle ? "flex-row" : "flex-col"} leading-10 my-5`}>
                 {whyChooseSectionss}
             </div>
-            <p className='leading-7 font-semibold'>{desc}</p>
+            <p className='leading-7 font-semibold line-clamp-5		'>{desc}</p>
 
             {ShowSliderArrows}
 

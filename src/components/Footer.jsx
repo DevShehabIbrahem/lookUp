@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className='flex justify-center w-[230px] h-[139px] mx-auto '>
                     <img src={logo} alt="logo" className='w-full h-full object-contain' />
                 </div>
-                <div className='flex justify-evenly flex-wrap gap-8 items-baseline w-full  mx-auto py-12'>
+                <div className='flex justify-evenly text-[12px] md:text-inherit  flex-wrap gap-8 items-baseline w-full  mx-auto py-12'>
                     <div>
                         <div className='flex flex-col items-center gap-3'>
 
