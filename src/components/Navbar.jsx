@@ -14,9 +14,9 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='container mx-auto'>
-            <div className='  flex justify-between items-center px-5 md:px-0'>
-                <div className='cursor-pointer w-[34.67px] h-[26px]  duration-300 hover:-rotate-90 hover:mt-1 md:hover:mt-0' onClick={ToggleMobileMenu}>
+        <nav className=' w-full  md:px-32  my-5 '>
+            <div className='flex justify-between items-center px-5 md:px-0'>
+                <div className='cursor-pointer w-[20px] md:w-[34.67px] h-lg md:h-[26px]  duration-300 hover:-rotate-90 hover:mt-1 md:hover:mt-0' onClick={ToggleMobileMenu}>
                     <img src={MenuIcon} alt="MenuIcon" className='w-full h-full' />
                 </div>
                 <div className='w-[180.03px] h-[90px] hidden md:flex'>

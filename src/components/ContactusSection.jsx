@@ -3,8 +3,8 @@ import contactUs from "../assets/images/cintactUs.jpeg"
 import arrowcontactUs from "../assets/images/SVG/icons/contactusIcon.svg"
 const ContactusSection = () => {
     return (
-        <div className='md:mt-32'>
-            <div className='w-full  h-[700px] relative mx-auto'>
+        <div className='mt-8 md:mt-40'>
+            <div className='w-full h-[700px] relative mx-auto'>
                 <img src={contactUs} alt="contactUs" className='w-full h-full object-cover' />
                 <div className='absolute top-0 bg-gradient-to-b from-[#06535b] to-[#06535b71] opacity-[.7] w-full h-full'></div>
 

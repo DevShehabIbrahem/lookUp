@@ -8,19 +8,24 @@ import Navbar from './components/Navbar';
 import OurVision from './components/OurVision';
 import VideoSection from './components/VideoSection';
 import WhyChooseusSection from './components/WhyChooseusSection';
+import Layout from './components/responsiveLayout/Layout';
 
 function App() {
   return (
     <>
-      <div className="container mx-auto max-w-[85rem]">
-        <Navbar />
+      <Navbar />
+      <Layout>
         <LivingRoomSection />
         <AboutUs />
-        <VideoSection />
+      </Layout>
+      <VideoSection />
+      <Layout>
         <OurVision />
-      </div>
+      </Layout>
       <ContactusSection />
-      <div className="mx-auto max-w-[85rem]"><WhyChooseusSection /></div>
+      <Layout>
+        <WhyChooseusSection />
+      </Layout>
 
       <Footer />
     </>
