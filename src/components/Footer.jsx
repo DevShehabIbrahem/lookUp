@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className='md:mt-32 text-white bg-gradient-to-b py-12 from-[#06535B] to-[#004A52]'>
             <div className='container mx-auto flex flex-col items-center'>
                 <div className='flex justify-center w-[230px] h-[139px] mx-auto '>
-                    <img src={logo} alt="logo" className='w-full h-full' />
+                    <img src={logo} alt="logo" className='w-full h-full object-contain' />
                 </div>
                 <div className='flex justify-evenly flex-wrap gap-8 items-baseline w-full  mx-auto py-12'>
                     <div>
