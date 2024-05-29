@@ -8,7 +8,7 @@ const OurVisionImg = () => {
                 {/* main BG Img */}
                 <img src={backG} alt="backG" class="w-full h-full object-cover" />
                 {/*  /main BG Img */}
-                <div class="absolute inset-0 ml-[20px] md:ml-[-40px] lg:ml-auto flex items-center justify-center w-[38rem]">
+                <div class="absolute inset-0 ml-[-91px] md:ml-[-40px] lg:ml-auto flex items-center justify-center w-[38rem]">
                     {/* text Div */}
                     <div className='-rotate-90 font-Astegra mix-blend-overlay h-[149px] w-full bg-sectionTitle'>
                         <div class="text-[#FFFFFF]  flex justify-center items-center text-3xl text-[64px] text-center w-full h-full ">

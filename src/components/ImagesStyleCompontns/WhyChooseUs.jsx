@@ -6,9 +6,9 @@ import BorderSvg from "../../assets/images/SVG/26svgImg.svg"
 import NumberSVG from "../../assets/images/SVG/numberSvg.svg"
 const WhyChooseUs = () => {
     return (
-        <div>
+        <>
 
-            <div className='md:w-[581px] h-[600px] md:h-[652px] relative'>
+            <div className='md:w-[581px] h-[600px] md:h-[652px] relative overflow-hidden'>
                 <img src={whyChooseImg} alt="whyChooseImg" className='w-full h-full object-cover' />
                 <div className='w-[350px] h-[365.71px] absolute bottom-14 right-0 -mr-24  clip-top-left '>
                     <img src={wooden} alt="wooden" className='w-full h-full object-cover' />
@@ -22,7 +22,7 @@ const WhyChooseUs = () => {
             </div>
 
 
-        </div>
+        </>
     )
 }
 
