@@ -26,7 +26,13 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g)$/i,
         use: [
-          'file-loader',
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images', // Output directory for images
+            },
+          },
           {
             loader: 'image-webpack-loader',
             options: {
@@ -50,12 +56,25 @@ module.exports = {
       {
         test: /\.svg$/i,
         use: [
-          'file-loader',
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'SVG', // Output directory for SVG files
+            },
+          },
           {
             loader: 'svgo-loader',
             options: {
               plugins: [
-                { name: 'preset-default', params: { overrides: { removeViewBox: false } } },
+                {
+                  name: 'preset-default',
+                  params: {
+                    overrides: {
+                      removeViewBox: false,
+                    },
+                  },
+                },
               ],
             },
           },
